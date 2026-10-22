@@ -25,7 +25,7 @@ Catálogo versionado de políticas de grupo para ambientes Windows/Active Direct
 ```text
 .
 ├── README.md
-├── gpos/
+├── GPO/
 │   ├── endpoints/
 │   │   └── wallpaper/
 │   ├── impressoras/
@@ -44,13 +44,13 @@ Catálogo versionado de políticas de grupo para ambientes Windows/Active Direct
 │   ├── impressoras/
 │   └── arquivos/
 ├── templates/
-│   ├── gpos/
+│   ├── catalogo/
 │   └── controle-de-mudancas/
 └── backups/
     └── .gitkeep
 ```
 
-As GPOs ficam agrupadas em `gpos/` por assunto. O diretório `scripts/` contém automações de apoio, `templates/` contém modelos de documentação e `docs/` reúne orientações transversais de governança.
+As GPOs ficam agrupadas em `GPO/`, que é o diretório principal do catálogo. Cada subdiretório representa um tema, como endpoints, impressoras, arquivos, segurança, rede, software, usuários ou servidores. Os diretórios `scripts/`, `templates/` e `docs/` apoiam a implantação e a governança.
 
 ## Pré-requisitos
 
@@ -174,9 +174,9 @@ Uma GPO somente deve ser promovida para produção quando:
 
 Para adicionar uma GPO:
 
-1. Crie um subdiretório em `gpos/` para o assunto da política.
+1. Crie um subdiretório temático dentro de `GPO/` para o assunto da política.
 2. Adicione scripts apenas quando a configuração nativa da GPO não for suficiente.
-3. Atualize `templates/gpos/GPO-Catalog.csv`.
+3. Atualize `templates/catalogo/GPO-Catalog.csv`.
 4. Inclua pré-requisitos, escopo, validação e rollback.
 5. Execute revisão técnica antes do merge.
 
