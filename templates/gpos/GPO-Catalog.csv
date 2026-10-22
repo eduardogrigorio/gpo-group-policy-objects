@@ -1,0 +1,4 @@
+Name,Scope,Purpose,Owner,Status,Target,Validation,Rollback,ReviewFrequency
+GPO-USER-Wallpaper,User,Aplicar wallpaper corporativo,Equipe de Infraestrutura,Draft,OU de homologação,gpresult + novo logon,Desvincular GPO,Semestral
+GPO-USER-MapPrinters,User,Mapear impressoras por grupo,Equipe de Suporte,Draft,Grupo de teste,Get-Printer + impressão de teste,Excluir item de preferência,Semestral
+GPO-COMPUTER-CopyManagedFiles,Computer,Distribuir arquivos aprovados,Equipe de Infraestrutura,Draft,OU de homologação,Get-FileHash + evento de aplicação,Restaurar versão anterior,Trimestral

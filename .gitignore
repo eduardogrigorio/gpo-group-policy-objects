@@ -1,0 +1,18 @@
+# Backups reais de GPO podem conter dados internos do domínio.
+backups/*
+!backups/.gitkeep
+!backups/README.md
+
+# Segredos e credenciais
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+*.p12
+*.ppk
+
+# Saídas locais de diagnóstico
+*.log
+*.html
+*.tmp
